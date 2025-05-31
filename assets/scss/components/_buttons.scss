@@ -13,3 +13,16 @@
     border-radius: radius.$btn-radius;
     transition: all 0.2s;
 }
+
+.icon-style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    cursor: pointer;
+    padding: 1em;
+    font-size: 1em;
+    border: 1px solid col.$black;
+    border-radius: radius.$btn-radius;
+    transition: all 0.2s;
+}

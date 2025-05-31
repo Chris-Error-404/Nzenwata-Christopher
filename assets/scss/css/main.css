@@ -100,6 +100,19 @@ nav.navbar .container a.button-style:hover {
   transition: all 0.2s;
 }
 
+.icon-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  cursor: pointer;
+  padding: 1em;
+  font-size: 1em;
+  border: 1px solid #000;
+  border-radius: 0px;
+  transition: all 0.2s;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -110,6 +123,81 @@ nav.navbar .container a.button-style:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+section.hero {
+  margin-top: 4em;
+}
+section.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+section.hero .container .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5em;
+  position: relative;
+  z-index: 9;
+  margin-right: -30px;
+  width: 55%;
+}
+section.hero .container .hero-text .hero-header h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+section.hero .container .hero-text .hero-header h1 span {
+  font-weight: 700;
+}
+section.hero .container .hero-text .hero-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 3em;
+}
+section.hero .container .hero-text .hero-btn-container a:hover {
+  background-color: #000;
+  color: #fff;
+}
+section.hero .container img.desktop-hero-img {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: auto;
+}
+section.hero .container img.mobile-hero-img {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  section.hero {
+    margin-top: 2em;
+  }
+  section.hero .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  section.hero .container .hero-text {
+    position: static;
+    margin-right: 0;
+    margin-top: 1.5em;
+    width: 100%;
+  }
+  section.hero .container .hero-text .hero-header h1 {
+    font-size: 2em;
+  }
+  section.hero .container .hero-text .hero-btn-container {
+    margin-top: 0em;
+  }
+  section.hero .container img.desktop-hero-img {
+    display: none;
+  }
+  section.hero .container img.mobile-hero-img {
+    display: block;
+    width: 100%;
+    height: 85%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
