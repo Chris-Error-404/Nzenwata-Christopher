@@ -424,6 +424,13 @@ section.projects .container .project-container .slide .slide-text h1 {
 section.projects .container .project-container .slide .slide-text p {
   color: #e4e4e7;
 }
+section.projects .container .project-container .slide .slide-text a {
+  display: flex;
+  gap: 0.5em;
+  color: #fff;
+  font-size: 1.05em;
+  font-weight: 500;
+}
 section.projects .container .project-container .slide .slide-text a i {
   color: #fff;
   font-size: 1.5em;
@@ -434,18 +441,12 @@ section.projects .container .project-container .slide .slide-text a i {
     padding: 3em 1em;
   }
   section.projects .container .project-container {
-    margin-top: 4em;
-    display: flex;
-    flex-direction: column;
+    margin-top: 3em;
     gap: 3em;
   }
   section.projects .container .project-container .slide {
     grid-template-columns: repeat(1, 1fr);
     gap: 2em;
-  }
-  section.projects .container .project-container .slide img {
-    width: 100%;
-    height: auto;
   }
   section.projects .container .project-container .slide img.mobile {
     display: block;
@@ -457,13 +458,6 @@ section.projects .container .project-container .slide .slide-text a i {
     display: flex;
     flex-direction: column;
     gap: 1em;
-  }
-  section.projects .container .project-container .slide .slide-text h1 {
-    text-align: left;
-  }
-  section.projects .container .project-container .slide .slide-text a i {
-    color: #fff;
-    font-size: 1.5em;
   }
 }
 .container {
