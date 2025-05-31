@@ -13,6 +13,7 @@
 @use './components/hero' as hero;
 @use './components/skills' as skills;
 @use './components/experience' as exp;
+@use './components/about' as abt;
 
 //layout
 @use './layout/utilities' as util;
