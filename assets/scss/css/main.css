@@ -57,20 +57,13 @@ nav.navbar .container ul {
   align-items: center;
   gap: 1.8em;
 }
-nav.navbar .container a.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
+nav.navbar .container a.button-style {
   background-color: #000;
   color: #fff;
-  padding: 0.5em 1em;
-  font-size: 1em;
-  border-radius: 0px;
-  transition: all 0.2s;
 }
-nav.navbar .container a.btn:hover {
-  text-decoration: 1px solid underline #fff;
+nav.navbar .container a.button-style:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 @media (max-width: 1024px) {
@@ -84,6 +77,19 @@ nav.navbar .container a.btn:hover {
     max-width: 50%;
   }
 }
+.button-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: 1px solid #000;
+  border-radius: 0px;
+  transition: all 0.2s;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

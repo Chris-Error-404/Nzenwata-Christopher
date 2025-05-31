@@ -8,6 +8,7 @@
 
 //components
 @use './components/navbar' as nav;
+@use './components/buttons' as btn;
 
 //layout
 @use './layout/utilities' as util;
