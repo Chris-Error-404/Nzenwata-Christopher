@@ -144,6 +144,9 @@ section.hero .container .hero-text .hero-btn-container {
   gap: 1em;
   margin-top: 3em;
 }
+section.hero .container .hero-text .hero-btn-container a i {
+  font-size: 1.2em;
+}
 section.hero .container .hero-text .hero-btn-container a:hover {
   background-color: #000;
   color: #fff;
