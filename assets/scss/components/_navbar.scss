@@ -1,0 +1,64 @@
+//abstracts - colors
+@use '../abstracts/colors' as col;
+
+//abstracts - border-radius
+@use '../abstracts/border-radius' as radius;
+
+nav.navbar{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.05em;
+        font-weight: 600;
+        padding: 2em 1em;
+
+        a.logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.8em;
+
+            img{
+                width: 45px;
+                height: auto;
+            }
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 1.8em;
+        }
+
+        a.btn{
+            background-color: col.$black;
+            color: col.$white;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            border-radius: radius.$btn-radius;
+            transition: all 0.2s;
+
+            &:hover{
+                text-decoration: 1px solid underline col.$white;
+            }
+
+            i{
+                margin-left: 0.5em;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    nav.navbar{
+
+        .container{
+            padding: 1em;
+
+            ul{
+                display: none;
+            }
+        }
+    }
+}

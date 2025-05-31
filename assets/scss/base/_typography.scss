@@ -1,3 +1,6 @@
+//abstracts - colors
+@use '../abstracts/_colors' as col;
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @font-face {
@@ -15,6 +18,8 @@ html{
 
 
     body {
+        background-color: col.$white;
+        color: col.$black;
         font-family: 'Space Grotesk Local', 'Space Grotesk', sans-serif;
         font-size: 1em;
         line-height: 1.5;
@@ -26,6 +31,7 @@ html{
 
         a{
           text-decoration: none;
+          color: col.$black;
         }
     }
 }

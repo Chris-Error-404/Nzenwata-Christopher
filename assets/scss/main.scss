@@ -1,19 +1,14 @@
 //abstracts
-@use './abstracts/variables' as var;
+@use './abstracts/colors' as col;
+@use './abstracts/border-radius' as radius;
 
 //base
 @use './base/reset' as reset;
 @use './base/typography' as typo;
 
+//components
+@use './components/navbar' as nav;
+
 //layout
 @use './layout/utilities' as util;
 
-body{
-    background-color: var.$black;
-    color: var.$white;
-}
-div{
-    min-height: 100px;
-    padding: 4em;
-    background-color: var.$dark-gray;
-}
