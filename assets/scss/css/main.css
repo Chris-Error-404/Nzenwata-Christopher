@@ -50,7 +50,7 @@ nav.navbar .container {
   justify-content: space-between;
   align-items: center;
   font-size: 1.05em;
-  font-weight: 600;
+  font-weight: 500;
   padding: 2em 1em;
 }
 nav.navbar .container a.logo-container {
@@ -255,7 +255,7 @@ section.skills .container .skill-box i {
   }
 }
 .sub-heading {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 600;
 }
 
@@ -274,6 +274,76 @@ section.skills .container .skill-box i {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+section.experience {
+  margin-top: 3em;
+  background-color: #000;
+  color: #fff;
+}
+section.experience .container {
+  padding: 3em 1em;
+}
+section.experience .container h1 {
+  text-align: center;
+}
+section.experience .container a {
+  text-align: center;
+  color: #fff;
+}
+section.experience .container a i {
+  font-size: 1.2em;
+  margin-right: 0.8em;
+}
+section.experience .container .experience-container {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+section.experience .container .experience-container .slide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  cursor: pointer;
+  padding: 2em;
+  transition: all 0.2s;
+  border: 1px solid #404040;
+}
+section.experience .container .experience-container .slide:hover {
+  background-color: #27272a;
+}
+section.experience .container .experience-container .slide .slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.experience .container .experience-container .slide .slide-header a {
+  text-align: left;
+}
+section.experience .container .experience-container .slide p {
+  color: #e4e4e7;
+}
+
+@media (max-width: 1024px) {
+  section.experience .container .experience-container {
+    margin-top: 3em;
+    gap: 1em;
+  }
+  section.experience .container .experience-container .slide {
+    padding: 1em;
+  }
+  section.experience .container .experience-container .slide:hover {
+    background-color: #000;
+  }
+  section.experience .container .experience-container .slide .slide-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+  section.experience .container .experience-container .slide p {
+    color: #e4e4e7;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
