@@ -40,6 +40,9 @@ section.skills{
             gap: 2em;
             padding: 2em;
             cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             transition: all 0.2s;
 
             &:hover{
@@ -61,11 +64,12 @@ section.skills{
 
 @media (max-width: 1024px){
     section.skills{
-
         .container{
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(1, auto);
+            margin-top: 2em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 2em;
         }
     }
-
 }

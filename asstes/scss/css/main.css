@@ -207,46 +207,53 @@ section.hero .container img.mobile-hero-img {
   padding: 0 15px;
 }
 
-section.skills h1 {
-  text-align: center;
-  margin-top: 2em;
-}
-section.skills .container {
-  margin-top: 4em;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 2em;
-}
-section.skills .container .skill-box {
-  border: 1px solid #000;
-  min-height: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  padding: 2em;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-section.skills .container .skill-box:hover {
-  background-color: #000;
-  color: #fff;
-}
-section.skills .container .skill-box .sub-heading {
-  font-size: 1.1em;
-  font-weight: 500;
-}
-section.skills .container .skill-box i {
-  font-size: 3em;
+/* section.skills{
+
+    h1{
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .container{
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 2em;
+
+        .skill-box{
+            border: 1px solid col.$black;
+            min-height: 180px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            padding: 2em;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover{
+                background-color: col.$black;
+                color: col.$white;
+            }
+
+            .sub-heading{
+                font-size: 1.1em;
+                font-weight: 500;
+            }
+
+            i{
+                font-size: 3em;
+            }
+        }
+    }
 }
 
-@media (max-width: 1024px) {
-  section.skills .container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, auto);
-  }
-}
+@media (max-width: 1024px){
+    section.skills{
+        display: none;
+    }
+} */
 
 /*# sourceMappingURL=main.css.map */
