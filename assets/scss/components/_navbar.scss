@@ -4,7 +4,17 @@
 //abstracts - border-radius
 @use '../abstracts/border-radius' as radius;
 
-nav.navbar{
+nav.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; // Ensures it stays on top of other elements
+    background-color: col.$white; // Ensure background isn't transparent
+    transition: box-shadow 0.3s ease;
+
+    &.scrolled {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); // Subtle shadow when scrolling
+    }
+    
     .container{
         display: flex;
         justify-content: space-between;
