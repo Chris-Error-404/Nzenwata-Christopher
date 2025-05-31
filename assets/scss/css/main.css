@@ -251,7 +251,7 @@ section.skills .container .skill-box i {
 
 @media (max-width: 1024px) {
   .main-heading {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 }
 .sub-heading {
@@ -261,7 +261,7 @@ section.skills .container .skill-box i {
 
 @media (max-width: 1024px) {
   .sub-heading {
-    font-size: 1.05em;
+    font-size: 1.08em;
   }
 }
 .container {
