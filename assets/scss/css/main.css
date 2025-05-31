@@ -181,7 +181,6 @@ section.hero .container img.mobile-hero-img {
   section.hero .container .hero-text {
     position: static;
     margin-right: 0;
-    margin-top: 1.5em;
     width: 100%;
   }
   section.hero .container .hero-text .hero-header h1 {
@@ -194,7 +193,7 @@ section.hero .container img.mobile-hero-img {
     display: none;
   }
   section.hero .container img.mobile-hero-img {
-    display: block;
+    display: none;
     width: 100%;
     height: 85%;
   }
