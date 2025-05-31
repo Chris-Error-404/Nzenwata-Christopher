@@ -1,0 +1,68 @@
+@use '../abstracts/colors' as col;
+
+section.testimonial{
+
+    .container{
+        padding: 3em 1em;
+
+        h1{
+            text-align: center;
+        }
+
+        .testimonial-container{
+            margin-top: 3em;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2em;
+
+            .client-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
+                border: 1px solid col.$black;
+                padding: 2em;
+                cursor: pointer;
+                transition: all 0.2s ;
+
+                &:hover{
+                    background-color: col.$black;
+                    color: col.$white;
+                }
+
+                img{
+
+                    border-radius: 50%;
+                    border: 1px solid col.$black;
+                }
+
+                p{
+                    text-align: center;
+                }
+            }
+    
+        }
+    }
+}
+
+
+@media (max-width:1024px){
+    section.testimonial{
+
+        .container{
+
+            .testimonial-container{
+                grid-template-columns: repeat(1, 1fr);
+
+                .client-box{
+                    &:hover{
+                        background-color: col.$white;
+                        color: col.$black
+                    }
+                }
+
+            }
+        }
+    }
+}

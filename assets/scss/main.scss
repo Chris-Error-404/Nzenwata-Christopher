@@ -15,6 +15,8 @@
 @use './components/experience' as exp;
 @use './components/about' as abt;
 @use './components/projects' as proj;
+@use './components/testimonial' as test;
+@use './components/contact' as contact;
 
 //layout
 @use './layout/utilities' as util;
