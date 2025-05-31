@@ -80,6 +80,9 @@ nav.navbar .container a.btn i {
   nav.navbar .container ul {
     display: none;
   }
+  nav.navbar .container span {
+    display: none;
+  }
 }
 .container {
   max-width: 1200px;
