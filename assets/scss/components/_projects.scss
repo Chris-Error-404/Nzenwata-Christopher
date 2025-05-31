@@ -49,6 +49,9 @@ section.projects{
                     h1{
                         text-align: left;
                     }
+                    p{
+                        color: col.$gray;
+                    }
                     a{
                         i{
                             color: col.$white;

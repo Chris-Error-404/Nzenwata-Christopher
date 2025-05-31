@@ -421,6 +421,9 @@ section.projects .container .project-container .slide .slide-text {
 section.projects .container .project-container .slide .slide-text h1 {
   text-align: left;
 }
+section.projects .container .project-container .slide .slide-text p {
+  color: #e4e4e7;
+}
 section.projects .container .project-container .slide .slide-text a i {
   color: #fff;
   font-size: 1.5em;
