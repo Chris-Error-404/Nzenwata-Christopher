@@ -45,7 +45,6 @@ nav.navbar .container {
 }
 nav.navbar .container a.logo-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 0.8em;
 }
