@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Space Grotesk Local';
+  src: url('/assets/scss/css/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+html{
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+
+
+    body {
+        font-family: 'Space Grotesk Local', 'Space Grotesk', sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        min-height: 100vh;
+    }
+}
+
+
