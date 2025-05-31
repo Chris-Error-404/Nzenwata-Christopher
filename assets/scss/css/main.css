@@ -248,10 +248,23 @@ section.skills .container .skill-box i {
 @media (max-width: 1024px) {
   section.skills .container {
     margin-top: 2em;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 2em;
+    gap: 1em;
+  }
+  section.skills .container .skill-box {
+    max-height: 180px;
+    min-height: 100px;
+  }
+  section.skills .container .skill-box:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  section.skills .container .sub-heading {
+    font-size: 1.05em;
+  }
+  section.skills .container i {
+    font-size: 4em;
   }
 }
 

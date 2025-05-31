@@ -66,10 +66,28 @@ section.skills{
     section.skills{
         .container{
             margin-top: 2em;
-            display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, auto);
-            gap: 2em;
+            gap: 1em;
+            
+            .skill-box{
+                max-height: 180px;
+                min-height: 100px;
+
+                &:hover{
+                    background-color: col.$white;
+                    color: col.$black;
+                }
+            }
+            .sub-heading{
+                font-size: 1.05em;
+            }
+
+            i{
+                font-size: 4em;
+            }
+
+
         }
     }
 }
