@@ -48,6 +48,16 @@ html body a {
     font-size: 1.8em;
   }
 }
+.mid-heading {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .mid-heading {
+    font-size: 1.5em;
+  }
+}
 .sub-heading {
   font-size: 1.2em;
   font-weight: 600;
@@ -364,6 +374,93 @@ section.about .container .about-text {
   }
   section.about .container img {
     width: 100%;
+  }
+}
+section.projects {
+  background-color: #000;
+  color: #fff;
+}
+section.projects .container {
+  padding: 3em 1em;
+}
+section.projects .container h1 {
+  text-align: center;
+}
+section.projects .container .project-container {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+}
+section.projects .container .project-container .slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4em;
+}
+section.projects .container .project-container .slide img {
+  width: 100%;
+  height: auto;
+}
+section.projects .container .project-container .slide img.mobile {
+  display: none;
+}
+section.projects .container .project-container .slide .preview {
+  display: flex;
+  justify-content: right;
+  align-items: baseline;
+}
+section.projects .container .project-container .slide .preview img {
+  width: 100%;
+  height: auto;
+}
+section.projects .container .project-container .slide .slide-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+section.projects .container .project-container .slide .slide-text h1 {
+  text-align: left;
+}
+section.projects .container .project-container .slide .slide-text a i {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+@media (max-width: 1024px) {
+  section.projects .container {
+    padding: 3em 1em;
+  }
+  section.projects .container .project-container {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+  section.projects .container .project-container .slide {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+  }
+  section.projects .container .project-container .slide img {
+    width: 100%;
+    height: auto;
+  }
+  section.projects .container .project-container .slide img.mobile {
+    display: block;
+  }
+  section.projects .container .project-container .slide .preview {
+    display: none;
+  }
+  section.projects .container .project-container .slide .slide-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  section.projects .container .project-container .slide .slide-text h1 {
+    text-align: left;
+  }
+  section.projects .container .project-container .slide .slide-text a i {
+    color: #fff;
+    font-size: 1.5em;
   }
 }
 .container {
