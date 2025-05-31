@@ -81,7 +81,7 @@ nav.navbar .container a.btn i {
     display: none;
   }
   nav.navbar .container span {
-    display: none;
+    width: 50%;
   }
 }
 .container {
