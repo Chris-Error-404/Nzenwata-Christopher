@@ -1,0 +1,98 @@
+//abstracts - colors
+@use '../abstracts/colors' as col;
+
+section.hero{
+    margin-top: 4em;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .hero-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1.5em;
+
+            position: relative;
+            z-index: 9;
+            margin-right: -30px;
+            width: 55%;
+
+            .hero-header{
+                h1{
+                    font-size: 2.5em;
+                    font-weight: 400;
+
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .hero-btn-container{
+                display: flex;
+                align-items: center;
+                gap: 1em;
+                margin-top: 3em;
+
+                a:hover{
+                    background-color: col.$black;
+                    color: col.$white;
+                }
+            }
+
+        }
+        
+        img.desktop-hero-img{
+            position: relative;
+            z-index: 1;
+            width: 50%;
+            height: auto;
+        }
+        img.mobile-hero-img{
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 1024px){
+
+    section.hero{
+        margin-top: 2em;
+
+        .container{
+            flex-direction: column-reverse;
+            align-items: center;
+    
+            .hero-text{
+                position: static;
+                margin-right: 0;
+                width: 100%;
+    
+                .hero-header{
+                    h1{
+                        font-size: 2em;
+                    }
+                }
+    
+                .hero-btn-container{
+                    margin-top: 0em;
+                }
+    
+            }
+            
+            img.desktop-hero-img{
+                display: none;
+            }
+
+            img.mobile-hero-img{
+                display: none;
+                width: 100%;
+                height: 85%;
+            }
+        }
+    
+    }
+}

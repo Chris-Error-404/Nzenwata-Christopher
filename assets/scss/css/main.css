@@ -113,18 +113,6 @@ nav.navbar .container a.button-style:hover {
   transition: all 0.2s;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.container-sm {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 section.hero {
   margin-top: 4em;
 }
@@ -197,6 +185,17 @@ section.hero .container img.mobile-hero-img {
     width: 100%;
     height: 85%;
   }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
