@@ -1,0 +1,98 @@
+@use '../abstracts/colors' as col;
+
+
+section.experience{
+    margin-top: 3em;
+    background-color: col.$black;
+    color: col.$white;
+
+    .container{
+        padding: 3em 1em;
+
+        h1{
+            text-align: center;
+        }
+        
+        a{
+            text-align: center;
+            color: col.$white;
+
+            i{
+                font-size: 1.2em;
+                margin-right: 0.8em;
+            }
+        }
+
+        .experience-container{
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            .slide{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                cursor: pointer;
+                padding: 2em;
+                transition: all 0.2s;
+                border: 1px solid col.$light-gray;
+
+                &:hover{
+                    background-color: col.$dark-gray;
+                }
+                
+                .slide-header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a{
+                        text-align: left;
+                    }
+
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                p{
+                    color: col.$gray;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:1024px){
+    
+section.experience{
+
+    .container{
+
+        .experience-container{
+            margin-top: 3em;
+            gap: 1em;
+
+            .slide{
+                padding: 1em;
+
+                &:hover{
+                    background-color: col.$black;
+                }
+                
+                .slide-header{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1em;
+                }
+                p{
+                    color: col.$gray;
+                }
+            }
+        }
+    }
+}
+
+}
