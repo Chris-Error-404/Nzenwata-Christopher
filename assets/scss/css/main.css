@@ -182,31 +182,6 @@ section.hero .container img.mobile-hero-img {
     height: 85%;
   }
 }
-.main-heading {
-  font-size: 2.5em;
-  font-weight: 400;
-}
-.main-heading span {
-  font-weight: 700;
-}
-
-@media (max-width: 1024px) {
-  .main-heading {
-    font-size: 2em;
-  }
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.container-sm {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 section.skills h1 {
   text-align: center;
   margin-top: 2em;
@@ -238,7 +213,6 @@ section.skills .container .skill-box:hover {
   color: #fff;
 }
 section.skills .container .skill-box .sub-heading {
-  font-size: 1.1em;
   font-weight: 500;
 }
 section.skills .container .skill-box i {
@@ -266,6 +240,40 @@ section.skills .container .skill-box i {
   section.skills .container i {
     font-size: 4em;
   }
+}
+.main-heading {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+.main-heading span {
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .main-heading {
+    font-size: 2em;
+  }
+}
+.sub-heading {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .sub-heading {
+    font-size: 1.05em;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

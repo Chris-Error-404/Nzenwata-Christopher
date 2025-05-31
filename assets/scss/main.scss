@@ -10,84 +10,10 @@
 @use './components/navbar' as nav;
 @use './components/buttons' as btn;
 @use './components/hero' as hero;
+@use './components/skills' as skills;
 @use './components/heading' as head;
 
 //layout
 @use './layout/utilities' as util;
 
 
-section.skills{
-
-    h1{
-        text-align: center;
-        margin-top: 2em;
-    }
-
-    .container{
-        margin-top: 4em;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 2em;
-
-        .skill-box{
-            border: 1px solid col.$black;
-            min-height: 180px; 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2em;
-            padding: 2em;
-            cursor: pointer;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            transition: all 0.2s;
-
-            &:hover{
-                background-color: col.$black;
-                color: col.$white;
-            }
-
-            .sub-heading{
-                font-size: 1.1em;
-                font-weight: 500;
-            }
-
-            i{
-                font-size: 3em;
-            }
-        }
-    }
-}
-
-@media (max-width: 1024px){
-    section.skills{
-        .container{
-            margin-top: 2em;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, auto);
-            gap: 1em;
-            
-            .skill-box{
-                max-height: 180px;
-                min-height: 100px;
-
-                &:hover{
-                    background-color: col.$white;
-                    color: col.$black;
-                }
-            }
-            .sub-heading{
-                font-size: 1.05em;
-            }
-
-            i{
-                font-size: 4em;
-            }
-
-
-        }
-    }
-}
