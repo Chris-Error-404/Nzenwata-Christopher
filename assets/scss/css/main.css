@@ -25,7 +25,7 @@ html body {
   font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
   font-size: 1em;
   line-height: 1.5;
-  min-height: 150vh;
+  min-height: 100vh;
 }
 html body ul, html body li {
   list-style-type: none;
