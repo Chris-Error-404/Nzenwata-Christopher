@@ -25,5 +25,22 @@ html body {
   line-height: 1.5;
   min-height: 100vh;
 }
+html body ul, html body li {
+  list-style-type: none;
+}
+html body a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+div {
+  min-height: 100px;
+  padding: 4em;
+  background-color: #363636;
+}
 
 /*# sourceMappingURL=main.css.map */

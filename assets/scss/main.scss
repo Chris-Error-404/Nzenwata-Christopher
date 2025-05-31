@@ -1,2 +1,16 @@
+//abstracts
+@use './abstracts/variables' as var;
+
+//base
 @use './base/reset' as reset;
 @use './base/typography' as typo;
+
+body{
+    background-color: var.$black;
+    color: var.$white;
+}
+div{
+    min-height: 100px;
+    padding: 4em;
+    background-color: var.$dark-gray;
+}
