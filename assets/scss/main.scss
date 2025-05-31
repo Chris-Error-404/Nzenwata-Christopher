@@ -5,6 +5,9 @@
 @use './base/reset' as reset;
 @use './base/typography' as typo;
 
+//layout
+@use './layout/utilities' as util;
+
 body{
     background-color: var.$black;
     color: var.$white;
