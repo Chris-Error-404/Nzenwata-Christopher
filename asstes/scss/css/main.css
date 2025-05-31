@@ -243,7 +243,7 @@ section.skills .container .skill-box i {
 }
 
 @media (max-width: 1024px) {
-  .container {
+  section.skills .container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, auto);
   }

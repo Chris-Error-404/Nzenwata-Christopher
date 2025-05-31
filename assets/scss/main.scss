@@ -10,8 +10,62 @@
 @use './components/navbar' as nav;
 @use './components/buttons' as btn;
 @use './components/hero' as hero;
+@use './components/heading' as head;
 
 //layout
 @use './layout/utilities' as util;
 
 
+section.skills{
+
+    h1{
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .container{
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 2em;
+
+        .skill-box{
+            border: 1px solid col.$black;
+            min-height: 180px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            padding: 2em;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover{
+                background-color: col.$black;
+                color: col.$white;
+            }
+
+            .sub-heading{
+                font-size: 1.1em;
+                font-weight: 500;
+            }
+
+            i{
+                font-size: 3em;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    section.skills{
+
+        .container{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, auto);
+        }
+    }
+
+}
