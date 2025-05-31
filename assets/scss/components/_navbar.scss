@@ -31,6 +31,10 @@ nav.navbar{
         }
 
         a.btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
             background-color: col.$black;
             color: col.$white;
             padding: 0.5em 1em;
@@ -40,10 +44,6 @@ nav.navbar{
 
             &:hover{
                 text-decoration: 1px solid underline col.$white;
-            }
-
-            i{
-                margin-left: 0.5em;
             }
         }
     }
@@ -60,7 +60,7 @@ nav.navbar{
             }
 
             span{
-                width: 50%;
+                max-width: 50%;
             }
         }
     }

@@ -58,6 +58,10 @@ nav.navbar .container ul {
   gap: 1.8em;
 }
 nav.navbar .container a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
   background-color: #000;
   color: #fff;
   padding: 0.5em 1em;
@@ -68,9 +72,6 @@ nav.navbar .container a.btn {
 nav.navbar .container a.btn:hover {
   text-decoration: 1px solid underline #fff;
 }
-nav.navbar .container a.btn i {
-  margin-left: 0.5em;
-}
 
 @media (max-width: 1024px) {
   nav.navbar .container {
@@ -80,7 +81,7 @@ nav.navbar .container a.btn i {
     display: none;
   }
   nav.navbar .container span {
-    width: 50%;
+    max-width: 50%;
   }
 }
 .container {
