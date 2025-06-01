@@ -54,6 +54,7 @@ section.testimonial{
 
             .testimonial-container{
                 grid-template-columns: repeat(1, 1fr);
+                gap: 1em;
 
                 .client-box{
                     &:hover{
