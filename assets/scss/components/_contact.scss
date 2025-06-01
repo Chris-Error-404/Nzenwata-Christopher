@@ -91,17 +91,19 @@ section.contact{
     
                 form{
                     width: 100%;
+
+                    .button-container{
+    
+                        button{
+                            padding: 0.8em 1em;
+                        }
+                    }
     
                 }
     
                 .contact-text{
                     gap: 1em;
                     width: 100%;
-    
-                    p{
-                        margin-top: 1em;
-                    }
-    
                 }
             }
         }

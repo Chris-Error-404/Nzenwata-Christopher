@@ -594,12 +594,38 @@ section.contact .container .contact-container .contact-text a:hover {
   section.contact .container .contact-container form {
     width: 100%;
   }
+  section.contact .container .contact-container form .button-container button {
+    padding: 0.8em 1em;
+  }
   section.contact .container .contact-container .contact-text {
     gap: 1em;
     width: 100%;
   }
-  section.contact .container .contact-container .contact-text p {
-    margin-top: 1em;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 1em;
+  font-size: 0.85em;
+}
+footer .container a {
+  color: #fff;
+}
+footer .container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
   }
 }
 .container {
