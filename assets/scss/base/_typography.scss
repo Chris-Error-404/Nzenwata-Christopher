@@ -33,6 +33,20 @@ html{
           text-decoration: none;
           color: col.$black;
         }
+
+        input,textarea{
+          font-size: 1em;
+          padding: 0.8em 1em;
+          border-radius: 0px !important;
+          border: 1px solid;
+          outline: 0px;
+
+          &::placeholder{
+            font-family: 'Space Grotesk Local', 'Space Grotesk', sans-serif;
+            font-size: 1em;
+          }
+        }
+
     }
 }
 

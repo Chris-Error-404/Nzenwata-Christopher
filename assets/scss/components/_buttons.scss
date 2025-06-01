@@ -12,6 +12,13 @@
     border: 1px solid col.$black;
     border-radius: radius.$btn-radius;
     transition: all 0.2s;
+    background-color: col.$black;
+    color: col.$white;
+
+    &:hover{
+        background-color: col.$white;
+        color: col.$black;
+    }
 }
 
 .icon-style{
@@ -25,4 +32,9 @@
     border: 1px solid col.$black;
     border-radius: radius.$btn-radius;
     transition: all 0.2s;
+
+    &:hover{
+        background-color: col.$black;
+        color: col.$white;
+    }
 }
