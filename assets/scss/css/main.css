@@ -282,7 +282,7 @@ section.skills .container .skill-box i {
     gap: 1em;
   }
   section.skills .container .skill-box {
-    max-height: 180px;
+    max-height: 150px;
     min-height: 100px;
   }
   section.skills .container .skill-box:hover {
