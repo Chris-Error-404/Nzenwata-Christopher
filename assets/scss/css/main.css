@@ -570,10 +570,10 @@ section.testimonial .container .testimonial-container .client-box img {
   border-radius: 50%;
   border: 1px solid #000;
 }
-section.testimonial .container .testimonial-container .client-box p {
+section.testimonial .container .testimonial-container .client-box a {
   text-align: center;
 }
-section.testimonial .container .testimonial-container .client-box p span {
+section.testimonial .container .testimonial-container .client-box a span {
   margin-top: 0.5em;
   display: block;
   font-weight: normal;
