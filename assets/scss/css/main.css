@@ -565,6 +565,8 @@ section.testimonial .container .testimonial-container .client-box:hover {
   color: #fff;
 }
 section.testimonial .container .testimonial-container .client-box img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 1px solid #000;
 }
