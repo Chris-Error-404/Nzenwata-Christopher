@@ -533,6 +533,9 @@ section.projects .container .project-container .slide .slide-text .info .stack i
   section.projects .container .project-container .slide .slide-text .info {
     flex-direction: column;
   }
+  section.projects .container .project-container .slide .slide-text .info .links {
+    gap: 1em;
+  }
 }
 section.testimonial .container {
   padding: 3em 1em;

@@ -147,6 +147,10 @@ section.projects{
 
                         .info{
                             flex-direction: column;
+
+                            .links{
+                                gap: 1em;
+                            }
                         }
                     }
                 }
