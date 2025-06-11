@@ -58,6 +58,7 @@ section.testimonial{
     section.testimonial{
 
         .container{
+            padding-bottom: 2em; //Just to make the white soace look even
 
             .testimonial-container{
                 grid-template-columns: repeat(1, 1fr);
