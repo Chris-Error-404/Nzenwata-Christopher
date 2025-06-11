@@ -20,7 +20,7 @@ section.projects{
             .slide{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 4em;
+                gap: 3em;
                 cursor: pointer;
                 padding: 2em;
                 transition: all 0.2s;
@@ -32,7 +32,8 @@ section.projects{
 
                     img{ //for the images on the left
                         width: 100%;
-                        height: auto;
+                        /* height: auto; */
+                        height: 100%;
                         align-self: end;
                     }
 
@@ -46,7 +47,8 @@ section.projects{
                     align-items: baseline;
                     img{
                         width: 100%;
-                        height: auto;
+                        /* height: auto; */
+                        height: 100%;
                     }
                 }
 
@@ -62,20 +64,43 @@ section.projects{
                     p{
                         color: col.$gray;
                     }
-                    a{
-                        display: flex;
-                        gap: 0.5em;
-                        color: col.$white;
-                        font-size: 1.05em;
-                        font-weight: 500;
-                        transition: all 0.2s;
 
-                        i{
-                            color: col.$white;
-                            font-size: 1.5em;
+                    .info{
+                        display: flex;
+                        gap: 1.5em;
+
+                        .links{
+                            display: flex;
+                            align-items: center;
+                            gap: 1.5em;
+
+                            a{
+                                display: flex;
+                                gap: 0.5em;
+                                color: col.$white;
+                                font-size: 1.05em;
+                                font-weight: 500;
+                                transition: all 0.2s;
+
+                                i{
+                                    color: col.$white;
+                                    font-size: 1.5em;
+                                }
+                            }
+                        }
+                            
+                        .stack{
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5em;
+                                
+                            i{
+                                border: 1px solid col.$light-gray;
+                                padding: 0.5em;
+                                font-size: 1.5em;
+                            }
                         }
                     }
-
                 }
             }
         }
@@ -114,6 +139,10 @@ section.projects{
                         display: flex;
                         flex-direction: column;
                         gap: 1em;   
+
+                        .info{
+                            flex-direction: column;
+                        }
                     }
                 }
             }
