@@ -9,7 +9,7 @@ section.about{
         //gap: 2em;
 
         img{
-            width: 70%;
+            width: 80%;
             height: auto;
         }
 
@@ -17,13 +17,28 @@ section.about{
             display: flex;
             flex-direction: column;
             gap: 1em;
+
+            P{
+                span{
+                    display: block;
+                    margin-bottom: 0.5em;
+                }
+
+                a{
+                    text-decoration: underline;
+                }
+            }
+
         }
     }   
 }
 
 @media (max-width:1024px){
     section.about{
+        
         .container{
+            padding-left: 0em;
+            padding-right: 0em;
             display: flex;
             flex-direction: column;
             gap: 2em;
@@ -36,6 +51,7 @@ section.about{
             img{
                 width: 100%;
             }
+            
         }
     }
 }

@@ -376,7 +376,7 @@ section.about .container {
   grid-template-columns: repeat(2, 1fr);
 }
 section.about .container img {
-  width: 70%;
+  width: 80%;
   height: auto;
 }
 section.about .container .about-text {
@@ -384,9 +384,18 @@ section.about .container .about-text {
   flex-direction: column;
   gap: 1em;
 }
+section.about .container .about-text P span {
+  display: block;
+  margin-bottom: 0.5em;
+}
+section.about .container .about-text P a {
+  text-decoration: underline;
+}
 
 @media (max-width: 1024px) {
   section.about .container {
+    padding-left: 0em;
+    padding-right: 0em;
     display: flex;
     flex-direction: column;
     gap: 2em;
