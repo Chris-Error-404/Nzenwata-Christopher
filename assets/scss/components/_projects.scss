@@ -127,8 +127,13 @@ section.projects{
                         background-color: col.$black;
                     }
 
+                    img{
+                        height: auto;
+                    }
+                    
                     img.mobile{
                         display: block;
+                        height: auto;
                     }
     
                     .preview{

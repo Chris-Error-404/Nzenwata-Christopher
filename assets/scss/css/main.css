@@ -515,8 +515,12 @@ section.projects .container .project-container .slide .slide-text .info .stack i
   section.projects .container .project-container .slide:hover {
     background-color: #000;
   }
+  section.projects .container .project-container .slide img {
+    height: auto;
+  }
   section.projects .container .project-container .slide img.mobile {
     display: block;
+    height: auto;
   }
   section.projects .container .project-container .slide .preview {
     display: none;
@@ -563,6 +567,12 @@ section.testimonial .container .testimonial-container .client-box img {
 }
 section.testimonial .container .testimonial-container .client-box p {
   text-align: center;
+}
+section.testimonial .container .testimonial-container .client-box p span {
+  margin-top: 0.5em;
+  display: block;
+  font-weight: normal;
+  font-size: 0.9em;
 }
 
 @media (max-width: 1024px) {
