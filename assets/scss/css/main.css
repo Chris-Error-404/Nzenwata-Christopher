@@ -652,7 +652,7 @@ section.contact .container .contact-container .contact-text a:hover {
 @media (max-width: 1024px) {
   section.contact .container .contact-container {
     flex-direction: column;
-    gap: 4em;
+    gap: 3em;
   }
   section.contact .container .contact-container form {
     width: 100%;
