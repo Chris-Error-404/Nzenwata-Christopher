@@ -814,7 +814,7 @@ section.contact .container .contact-container form .button-container .button-sty
   cursor: pointer;
   overflow: hidden;
   isolation: isolate;
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
 }
 section.contact .container .contact-container form .button-container .button-style .bg {
   content: "";
