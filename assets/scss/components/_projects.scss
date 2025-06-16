@@ -23,7 +23,7 @@ section.projects{
                 gap: 3em;
                 cursor: pointer;
                 padding: 2em;
-                transition: all 0.2s;
+                transition: all 0.2s ease-out;
                 border: 1px solid col.$light-gray;
 
                     &:hover{
