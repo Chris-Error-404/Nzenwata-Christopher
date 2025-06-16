@@ -9,70 +9,99 @@ section.testimonial{
             text-align: center;
         }
 
-        .testimonial-container{
+        .testimonial-container {
             margin-top: 3em;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2em;
-
-            .client-box{
+          
+            .client-box {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 1em;
+              border: 1px solid col.$black;
+              padding: 2em;
+              cursor: pointer;
+              transition: all 0.4s ease;
+              isolation: isolate;
+              overflow: hidden;
+              backface-visibility: hidden;
+              will-change: transform;
+          
+              .bg {
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                right: -1px;
+                bottom: -1px;
+                background-color: col.$black;
+                transform: scaleY(0);
+                transform-origin: bottom center;
+                transition: transform 0.5s ease;
+                z-index: 1;
+                backface-visibility: hidden;
+                will-change: transform;
+              }
+          
+              .content {
+                position: relative;
+                z-index: 2;
+                color: inherit;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
                 gap: 1em;
+              }
+          
+              img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
                 border: 1px solid col.$black;
-                padding: 2em;
-                cursor: pointer;
-                transition: all 0.2s ;
-
-                &:hover{
-                    background-color: col.$black;
-                    color: col.$white;
-
-                    a{
-                        position: relative;          // establish containing block for pseudo
-                        color: col.$white;              // keep your existing text color
-                      
-                        &::after {
-                          content: "";
-                          position: absolute;
-                          left: 50%;
-                          bottom: 0;
-                          width: 0;
-                          height: 2px;
-                          background-color: col.$white;
-                          transition: width 0.3s ease, left 0.3s ease;
-                        }
-                      
-                        &:hover::after {
-                          width: 100%;
-                          left: 0;
-                        }
-                        
-                    }
+              }
+          
+              a {
+                text-align: center;
+                color: inherit;
+                position: relative;
+          
+                &::after {
+                  content: "";
+                  position: absolute;
+                  left: 50%;
+                  bottom: 0;
+                  width: 0;
+                  height: 2px;
+                  background-color: currentColor;
+                  transition: width 0.3s ease, left 0.3s ease;
                 }
-
-                img{
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;
-                    border: 1px solid col.$black;
+          
+                &:hover::after {
+                  width: 100%;
+                  left: 0;
                 }
-
-                a{
-                    text-align: center;
+              }
+          
+              span {
+                margin-top: -0.5em;
+                display: block;
+                font-weight: normal;
+                font-size: 0.9em;
+              }
+          
+              &:hover {
+                color: col.$white;
+          
+                .bg {
+                  transform: scaleY(1);
                 }
-                
-                span{
-                    margin-top: -0.5em;
-                    display: block;
-                    font-weight: normal;
-                    font-size: 0.9em;
-                }
+              }
             }
-    
-        }
+          }
+          
     }
 }
 
@@ -87,14 +116,28 @@ section.testimonial{
                 grid-template-columns: repeat(1, 1fr);
                 gap: 1em;
 
-                .client-box{
-                    &:hover{
-                        background-color: col.$white;
-                        color: col.$black
-                    }
-                }
-
             }
         }
     }
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .client-box {
+      .bg {
+        display: none !important;
+      }
+  
+      .content {
+        color: col.$black !important;
+      }
+  
+      &:hover {
+        color: col.$black !important;
+  
+        .bg {
+          transform: none !important;
+        }
+      }
+    }
+  }
+  

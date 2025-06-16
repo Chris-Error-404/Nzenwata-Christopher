@@ -50,15 +50,74 @@ nav.navbar {
             }
         }
 
-        a.button-style{
+        a.button-style.float-hover {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+            cursor: pointer;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            border: 1px solid col.$black;
+            border-radius: radius.$btn-radius;
             background-color: col.$black;
             color: col.$white;
-
-            &:hover{
+            overflow: hidden;
+            isolation: isolate;
+            transition: color 0.3s ease, background-color 0.3s ease;
+          
+            .bg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: col.$white;
+              transform: scaleY(0);
+              transform-origin: bottom;
+              transition: transform 0.4s ease;
+              z-index: 1;
+            }
+          
+            .text {
+              position: relative;
+              z-index: 2;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.5em;
+              white-space: nowrap;
+            }
+          
+            &:hover {
+              color: col.$black;
+          
+              .bg {
+                transform: scaleY(1);
+              }
+            }
+          
+            // 🔒 Disable animation on mobile
+            @media (max-width: 1024px) {
+              .bg {
+                display: none;
+              }
+          
+              .text {
+                z-index: auto;
+              }
+          
+              &:hover {
                 background-color: col.$white;
                 color: col.$black;
+              }
             }
-        }
+          }
+          
+          
+          
+          
     }
 }
 

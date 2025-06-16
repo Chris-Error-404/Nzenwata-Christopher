@@ -35,21 +35,59 @@ section.contact{
                     font-size: 1em;
                 }
 
-                .button-container{
+                .button-container {
                     display: flex;
                     align-items: center;
                     justify-content: left;
                     gap: 1em;
-
-                    button{
-                        padding: 1em;
-                        font-weight: 500;
+                  
+                    .button-style {
+                      position: relative;
+                      padding: 0.8em 1em;
+                      font-weight: 500;
+                      border: 1px solid col.$black;
+                      background-color: transparent;
+                      color: col.$black;
+                      cursor: pointer;
+                      overflow: hidden;
+                      isolation: isolate;
+                      transition: color 0.3s ease;
+                  
+                      .bg {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        background-color: col.$black;
+                        transform: scaleY(0);
+                        transform-origin: bottom;
+                        transition: transform 0.4s ease;
+                        z-index: 1;
+                      }
+                  
+                      .text {
+                        position: relative;
+                        z-index: 2;
+                        color: inherit;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                      }
+                  
+                      &:hover {
+                        color: col.$white;
+                  
+                        .bg {
+                          transform: scaleY(1);
+                          transform-origin: top;
+                        }
+                      }
                     }
-
-                    i{
-                        font-size: 1.2em;
+                  
+                    i {
+                      font-size: 1.2em;
                     }
-                }
+                  }
+                       
 
             }
 

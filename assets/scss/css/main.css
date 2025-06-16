@@ -99,19 +99,40 @@ html body input::placeholder, html body textarea::placeholder {
 }
 
 .icon-style {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
   cursor: pointer;
-  padding: 1em;
-  font-size: 1em;
+  font-size: 1.2rem;
   border: 1px solid #000;
   border-radius: 0px;
-  transition: all 0.2s;
+  overflow: hidden;
+  isolation: isolate;
+  transition: all 0.4s ease;
+}
+.icon-style .bg {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.icon-style .text {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .icon-style:hover {
-  background-color: #000;
   color: #fff;
 }
 
@@ -154,13 +175,61 @@ nav.navbar .container ul a {
 nav.navbar .container ul a::after {
   background-color: #000;
 }
-nav.navbar .container a.button-style {
+nav.navbar .container a.button-style.float-hover {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border: 1px solid #000;
+  border-radius: 0px;
   background-color: #000;
   color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
-nav.navbar .container a.button-style:hover {
+nav.navbar .container a.button-style.float-hover .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+nav.navbar .container a.button-style.float-hover .text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  white-space: nowrap;
+}
+nav.navbar .container a.button-style.float-hover:hover {
   color: #000;
+}
+nav.navbar .container a.button-style.float-hover:hover .bg {
+  transform: scaleY(1);
+}
+@media (max-width: 1024px) {
+  nav.navbar .container a.button-style.float-hover .bg {
+    display: none;
+  }
+  nav.navbar .container a.button-style.float-hover .text {
+    z-index: auto;
+  }
+  nav.navbar .container a.button-style.float-hover:hover {
+    background-color: #fff;
+    color: #000;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -200,10 +269,6 @@ section.hero .container .hero-text .hero-btn-container {
 }
 section.hero .container .hero-text .hero-btn-container a i {
   font-size: 1.2em;
-}
-section.hero .container .hero-text .hero-btn-container a:hover {
-  background-color: #000;
-  color: #fff;
 }
 section.hero .container img.desktop-hero-img {
   position: relative;
@@ -255,6 +320,7 @@ section.skills .container {
   gap: 2em;
 }
 section.skills .container .skill-box {
+  position: relative;
   border: 1px solid #000;
   min-height: 180px;
   display: flex;
@@ -267,10 +333,35 @@ section.skills .container .skill-box {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  transition: all 0.2s;
+  transition: all 0.4s ease;
+  isolation: isolate;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+section.skills .container .skill-box .bg {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: #000;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+section.skills .container .skill-box .text {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 section.skills .container .skill-box:hover {
-  background-color: #000;
   color: #fff;
 }
 section.skills .container .skill-box .sub-heading {
@@ -300,6 +391,20 @@ section.skills .container .skill-box i {
   }
   section.skills .container i {
     font-size: 4em;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .skill-box .bg {
+    display: none !important;
+  }
+  .skill-box .text {
+    color: #000 !important;
+  }
+  .skill-box:hover {
+    color: #000 !important;
+  }
+  .skill-box:hover .bg {
+    transform: none !important;
   }
 }
 section.experience {
@@ -553,6 +658,7 @@ section.testimonial .container .testimonial-container {
   gap: 2em;
 }
 section.testimonial .container .testimonial-container .client-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -561,29 +667,34 @@ section.testimonial .container .testimonial-container .client-box {
   border: 1px solid #000;
   padding: 2em;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.4s ease;
+  isolation: isolate;
+  overflow: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
 }
-section.testimonial .container .testimonial-container .client-box:hover {
-  background-color: #000;
-  color: #fff;
-}
-section.testimonial .container .testimonial-container .client-box:hover a {
-  position: relative;
-  color: #fff;
-}
-section.testimonial .container .testimonial-container .client-box:hover a::after {
-  content: "";
+section.testimonial .container .testimonial-container .client-box .bg {
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #fff;
-  transition: width 0.3s ease, left 0.3s ease;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background-color: #000;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.5s ease;
+  z-index: 1;
+  backface-visibility: hidden;
+  will-change: transform;
 }
-section.testimonial .container .testimonial-container .client-box:hover a:hover::after {
-  width: 100%;
-  left: 0;
+section.testimonial .container .testimonial-container .client-box .content {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 section.testimonial .container .testimonial-container .client-box img {
   width: 100px;
@@ -593,12 +704,34 @@ section.testimonial .container .testimonial-container .client-box img {
 }
 section.testimonial .container .testimonial-container .client-box a {
   text-align: center;
+  color: inherit;
+  position: relative;
+}
+section.testimonial .container .testimonial-container .client-box a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+section.testimonial .container .testimonial-container .client-box a:hover::after {
+  width: 100%;
+  left: 0;
 }
 section.testimonial .container .testimonial-container .client-box span {
   margin-top: -0.5em;
   display: block;
   font-weight: normal;
   font-size: 0.9em;
+}
+section.testimonial .container .testimonial-container .client-box:hover {
+  color: #fff;
+}
+section.testimonial .container .testimonial-container .client-box:hover .bg {
+  transform: scaleY(1);
 }
 
 @media (max-width: 1024px) {
@@ -609,9 +742,19 @@ section.testimonial .container .testimonial-container .client-box span {
     grid-template-columns: repeat(1, 1fr);
     gap: 1em;
   }
-  section.testimonial .container .testimonial-container .client-box:hover {
-    background-color: #fff;
-    color: #000;
+}
+@media (hover: none) and (pointer: coarse) {
+  .client-box .bg {
+    display: none !important;
+  }
+  .client-box .content {
+    color: #000 !important;
+  }
+  .client-box:hover {
+    color: #000 !important;
+  }
+  .client-box:hover .bg {
+    transform: none !important;
   }
 }
 section.contact .container {
@@ -650,9 +793,42 @@ section.contact .container .contact-container form .button-container {
   justify-content: left;
   gap: 1em;
 }
-section.contact .container .contact-container form .button-container button {
-  padding: 1em;
+section.contact .container .contact-container form .button-container .button-style {
+  position: relative;
+  padding: 0.8em 1em;
   font-weight: 500;
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.3s ease;
+}
+section.contact .container .contact-container form .button-container .button-style .bg {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+section.contact .container .contact-container form .button-container .button-style .text {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+section.contact .container .contact-container form .button-container .button-style:hover {
+  color: #fff;
+}
+section.contact .container .contact-container form .button-container .button-style:hover .bg {
+  transform: scaleY(1);
+  transform-origin: top;
 }
 section.contact .container .contact-container form .button-container i {
   font-size: 1.2em;
@@ -748,5 +924,27 @@ a.animate:hover::after {
   width: 100%;
   left: 0;
 }
+
+/* .float-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    isolation: isolate;
+
+    .bg {
+      position: absolute;
+      inset: 0; // hover color
+      transform: scaleY(0);
+      transform-origin: bottom center;
+      transition: transform 0.4s ease;
+      z-index: 1;
+    }
+
+    .text {
+      position: relative;
+      z-index: 2;
+    }
+  } */
 
 /*# sourceMappingURL=main.css.map */
