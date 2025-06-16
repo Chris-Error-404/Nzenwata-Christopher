@@ -119,7 +119,7 @@ html body input::placeholder, html body textarea::placeholder {
   background: #000;
   transform: scaleY(0);
   transform-origin: bottom center;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
   z-index: 1;
 }
 .icon-style .text {
@@ -935,27 +935,5 @@ a.animate:hover::after {
   width: 100%;
   left: 0;
 }
-
-/* .float-hover {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    overflow: hidden;
-    isolation: isolate;
-
-    .bg {
-      position: absolute;
-      inset: 0; // hover color
-      transform: scaleY(0);
-      transform-origin: bottom center;
-      transition: transform 0.4s ease;
-      z-index: 1;
-    }
-
-    .text {
-      position: relative;
-      z-index: 2;
-    }
-  } */
 
 /*# sourceMappingURL=main.css.map */
