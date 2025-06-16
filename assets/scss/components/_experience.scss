@@ -12,16 +12,7 @@ section.experience{
         h1{
             text-align: center;
         }
-        
-        a{
-            text-align: center;
-            color: col.$white;
 
-            i{
-                font-size: 1.2em;
-                margin-right: 0.8em;
-            }
-        }
 
         .experience-container{
             margin-top: 3em;
@@ -41,7 +32,7 @@ section.experience{
                 &:hover{
                     background-color: col.$dark-gray;
                 }
-                
+            
                 .slide-header{
                     display: flex;
                     justify-content: space-between;
@@ -49,10 +40,16 @@ section.experience{
 
                     a{
                         text-align: left;
-                    }
+                        color: col.$white;
 
-                    a:hover{
-                        text-decoration: underline;
+                        &::after{
+                            background-color: col.$white;
+                        }
+             
+                        i{
+                            font-size: 1.2em;
+                            margin-right: 0.8em;
+                        }
                     }
                 }
 

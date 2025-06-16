@@ -39,6 +39,15 @@ nav.navbar {
             display: flex;
             align-items: center;
             gap: 1.8em;
+
+            a{
+                color: col.$black;             
+              
+                &::after {
+                  background-color: col.$black;
+                }
+                
+            }
         }
 
         a.button-style{

@@ -29,6 +29,28 @@ section.testimonial{
                 &:hover{
                     background-color: col.$black;
                     color: col.$white;
+
+                    a{
+                        position: relative;          // establish containing block for pseudo
+                        color: col.$white;              // keep your existing text color
+                      
+                        &::after {
+                          content: "";
+                          position: absolute;
+                          left: 50%;
+                          bottom: 0;
+                          width: 0;
+                          height: 2px;
+                          background-color: col.$white;
+                          transition: width 0.3s ease, left 0.3s ease;
+                        }
+                      
+                        &:hover::after {
+                          width: 100%;
+                          left: 0;
+                        }
+                        
+                    }
                 }
 
                 img{
@@ -40,13 +62,13 @@ section.testimonial{
 
                 a{
                     text-align: center;
-
-                    span{
-                        margin-top: 0.5em;
-                        display: block;
-                        font-weight: normal;
-                        font-size: 0.9em;
-                    }
+                }
+                
+                span{
+                    margin-top: -0.5em;
+                    display: block;
+                    font-weight: normal;
+                    font-size: 0.9em;
                 }
             }
     

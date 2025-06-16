@@ -148,6 +148,12 @@ nav.navbar .container ul {
   align-items: center;
   gap: 1.8em;
 }
+nav.navbar .container ul a {
+  color: #000;
+}
+nav.navbar .container ul a::after {
+  background-color: #000;
+}
 nav.navbar .container a.button-style {
   background-color: #000;
   color: #fff;
@@ -307,14 +313,6 @@ section.experience .container {
 section.experience .container h1 {
   text-align: center;
 }
-section.experience .container a {
-  text-align: center;
-  color: #fff;
-}
-section.experience .container a i {
-  font-size: 1.2em;
-  margin-right: 0.8em;
-}
 section.experience .container .experience-container {
   margin-top: 3em;
   display: flex;
@@ -340,9 +338,14 @@ section.experience .container .experience-container .slide .slide-header {
 }
 section.experience .container .experience-container .slide .slide-header a {
   text-align: left;
+  color: #fff;
 }
-section.experience .container .experience-container .slide .slide-header a:hover {
-  text-decoration: underline;
+section.experience .container .experience-container .slide .slide-header a::after {
+  background-color: #fff;
+}
+section.experience .container .experience-container .slide .slide-header a i {
+  font-size: 1.2em;
+  margin-right: 0.8em;
 }
 section.experience .container .experience-container .slide p {
   color: #e4e4e7;
@@ -564,6 +567,24 @@ section.testimonial .container .testimonial-container .client-box:hover {
   background-color: #000;
   color: #fff;
 }
+section.testimonial .container .testimonial-container .client-box:hover a {
+  position: relative;
+  color: #fff;
+}
+section.testimonial .container .testimonial-container .client-box:hover a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+section.testimonial .container .testimonial-container .client-box:hover a:hover::after {
+  width: 100%;
+  left: 0;
+}
 section.testimonial .container .testimonial-container .client-box img {
   width: 100px;
   height: 100px;
@@ -573,8 +594,8 @@ section.testimonial .container .testimonial-container .client-box img {
 section.testimonial .container .testimonial-container .client-box a {
   text-align: center;
 }
-section.testimonial .container .testimonial-container .client-box a span {
-  margin-top: 0.5em;
+section.testimonial .container .testimonial-container .client-box span {
+  margin-top: -0.5em;
   display: block;
   font-weight: normal;
   font-size: 0.9em;
@@ -650,8 +671,11 @@ section.contact .container .contact-container .contact-text h1 {
 section.contact .container .contact-container .contact-text h1 span {
   font-weight: 600;
 }
-section.contact .container .contact-container .contact-text a:hover {
-  text-decoration: underline;
+section.contact .container .contact-container .contact-text a {
+  color: #000;
+}
+section.contact .container .contact-container .contact-text a::after {
+  background-color: #000;
 }
 
 @media (max-width: 1024px) {
@@ -684,8 +708,8 @@ footer .container {
 footer .container a {
   color: #fff;
 }
-footer .container a:hover {
-  text-decoration: underline;
+footer .container a::after {
+  background-color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -706,6 +730,23 @@ footer .container a:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+a.animate {
+  position: relative;
+}
+a.animate::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+a.animate:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

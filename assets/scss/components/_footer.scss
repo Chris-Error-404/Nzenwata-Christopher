@@ -14,8 +14,8 @@ footer{
         a{
             color: col.$white;
 
-            &:hover{
-                text-decoration: underline;
+            &::after{
+                background-color: col.$white;
             }
         }
     }

@@ -70,8 +70,10 @@ section.contact{
                 }
 
                 a{
-                    &:hover{
-                        text-decoration: underline;
+                    color: col.$black;
+        
+                    &::after{
+                        background-color: col.$black;
                     }
                 }
             }
