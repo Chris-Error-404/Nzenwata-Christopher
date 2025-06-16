@@ -35,13 +35,17 @@ section.skills{
           
             .bg {
               position: absolute;
-              left: 0;
-              bottom: 0;
-              width: 100%;
-              height: 0%; // Initial height
+              top: -1px;
+              left: -1px;
+              right: -1px;
+              bottom: -1px;
               background: col.$black;
-              transition: height 0.4s ease;
+              transform: scaleY(0); // Initially collapsed
+              transform-origin: bottom center; // Animate upward
+              transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); // Smooth in/out
               z-index: 1;
+              backface-visibility: hidden;
+              will-change: transform;
             }
           
             .text {
@@ -54,14 +58,6 @@ section.skills{
               gap: 2em;
             }
           
-            &:hover {
-              color: col.$white;
-          
-              .bg {
-                height: 100%; // Bar fills upward on hover
-              }
-            }
-          
             .sub-heading {
               font-weight: 500;
             }
@@ -69,8 +65,27 @@ section.skills{
             i {
               font-size: 3em;
             }
-        }
           
+            &:hover {
+              color: col.$white;
+          
+              .bg {
+                transform: scaleY(1); // Animate bar fill on hover
+              }
+            }
+          }
+          
+          // ✅ Disable background animation on mobile
+          @media (max-width: 1024px) {
+            .skill-box .bg {
+              display: none;
+            }
+          
+            .skill-box:hover {
+              color: col.$white; // Optional: retain white text on hover
+            }
+          }
+            
     }
 }
 
