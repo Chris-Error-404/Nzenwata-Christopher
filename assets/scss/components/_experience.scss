@@ -26,7 +26,7 @@ section.experience{
                 gap: 1.5em;
                 cursor: pointer;
                 padding: 2em;
-                transition: all 0.4s;
+                transition: all 0.3s ease-out;
                 border: 1px solid col.$light-gray;
 
                 &:hover{
