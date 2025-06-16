@@ -798,8 +798,8 @@ section.contact .container .contact-container form .button-container .button-sty
   padding: 0.8em 1em;
   font-weight: 500;
   border: 1px solid #000;
-  background-color: transparent;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   cursor: pointer;
   overflow: hidden;
   isolation: isolate;
@@ -809,7 +809,7 @@ section.contact .container .contact-container form .button-container .button-sty
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #000;
+  background-color: #fff;
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 0.4s ease;
@@ -824,7 +824,7 @@ section.contact .container .contact-container form .button-container .button-sty
   text-align: center;
 }
 section.contact .container .contact-container form .button-container .button-style:hover {
-  color: #fff;
+  color: #000;
 }
 section.contact .container .contact-container form .button-container .button-style:hover .bg {
   transform: scaleY(1);

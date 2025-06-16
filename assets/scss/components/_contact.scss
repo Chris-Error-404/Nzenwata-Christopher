@@ -46,8 +46,8 @@ section.contact{
                       padding: 0.8em 1em;
                       font-weight: 500;
                       border: 1px solid col.$black;
-                      background-color: transparent;
-                      color: col.$black;
+                      background-color: col.$black;
+                      color: col.$white;
                       cursor: pointer;
                       overflow: hidden;
                       isolation: isolate;
@@ -57,7 +57,7 @@ section.contact{
                         content: "";
                         position: absolute;
                         inset: 0;
-                        background-color: col.$black;
+                        background-color: col.$white;
                         transform: scaleY(0);
                         transform-origin: bottom;
                         transition: transform 0.4s ease;
@@ -74,7 +74,7 @@ section.contact{
                       }
                   
                       &:hover {
-                        color: col.$white;
+                        color: col.$black;
                   
                         .bg {
                           transform: scaleY(1);
