@@ -719,6 +719,11 @@ section.testimonial .container .testimonial-container .client-box a {
   text-align: center;
   color: inherit;
   position: relative;
+  /*  
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  } */
 }
 section.testimonial .container .testimonial-container .client-box a::after {
   content: "";
@@ -730,10 +735,6 @@ section.testimonial .container .testimonial-container .client-box a::after {
   background-color: currentColor;
   transition: width 0.3s ease, left 0.3s ease;
 }
-section.testimonial .container .testimonial-container .client-box a:hover::after {
-  width: 100%;
-  left: 0;
-}
 section.testimonial .container .testimonial-container .client-box span {
   margin-top: -0.5em;
   display: block;
@@ -742,6 +743,10 @@ section.testimonial .container .testimonial-container .client-box span {
 }
 section.testimonial .container .testimonial-container .client-box:hover {
   color: #fff;
+}
+section.testimonial .container .testimonial-container .client-box:hover a::after {
+  width: 100%;
+  left: 0;
 }
 section.testimonial .container .testimonial-container .client-box:hover .bg {
   transform: scaleY(1);

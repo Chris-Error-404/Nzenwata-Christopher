@@ -68,7 +68,7 @@ section.testimonial{
                 color: inherit;
                 position: relative;
           
-                &::after {
+               &::after {
                   content: "";
                   position: absolute;
                   left: 50%;
@@ -79,10 +79,11 @@ section.testimonial{
                   transition: width 0.3s ease, left 0.3s ease;
                 }
           
+                /*  
                 &:hover::after {
                   width: 100%;
                   left: 0;
-                }
+                } */
               }
           
               span {
@@ -94,6 +95,11 @@ section.testimonial{
           
               &:hover {
                 color: col.$white;
+          
+                a::after {
+                  width: 100%;
+                  left: 0;
+                } 
           
                 .bg {
                   transform: scaleY(1);
