@@ -68,6 +68,14 @@ section.skills{
           
             &:hover {
               color: col.$white;
+
+              //float up skillbox
+              margin-bottom: 1em;
+              margin-top: -1em;
+
+              i{
+                animation: beat 2s infinite;
+              }
           
               .bg {
                 transform: scaleY(1); // Animate bar fill on hover
@@ -140,3 +148,9 @@ section.skills{
     }
   }
   
+
+  @keyframes beat {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }

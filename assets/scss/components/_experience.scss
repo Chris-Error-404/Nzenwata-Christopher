@@ -31,6 +31,12 @@ section.experience{
 
                 &:hover{
                     background-color: col.$dark-gray;
+
+                    a::after{
+                        width: 100%;
+                        left: 0;
+                        background-color: col.$white;
+                    }
                 }
             
                 .slide-header{
@@ -41,10 +47,6 @@ section.experience{
                     a{
                         text-align: left;
                         color: col.$white;
-
-                        &::after{
-                            background-color: col.$white;
-                        }
              
                         i{
                             font-size: 1.2em;
@@ -77,6 +79,10 @@ section.experience{
 
                 &:hover{
                     background-color: col.$black;
+
+                    a::after{
+                        width: 0%;
+                    }
                 }
                 
                 .slide-header{

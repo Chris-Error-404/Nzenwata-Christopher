@@ -369,6 +369,11 @@ section.skills .container .skill-box i {
 }
 section.skills .container .skill-box:hover {
   color: #fff;
+  margin-bottom: 1em;
+  margin-top: -1em;
+}
+section.skills .container .skill-box:hover i {
+  animation: beat 2s infinite;
 }
 section.skills .container .skill-box:hover .bg {
   transform: scaleY(1);
@@ -418,6 +423,17 @@ section.skills .container .skill-box:hover .bg {
     transform: none !important;
   }
 }
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 section.experience {
   margin-top: 3em;
   background-color: #000;
@@ -447,6 +463,11 @@ section.experience .container .experience-container .slide {
 section.experience .container .experience-container .slide:hover {
   background-color: #27272a;
 }
+section.experience .container .experience-container .slide:hover a::after {
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+}
 section.experience .container .experience-container .slide .slide-header {
   display: flex;
   justify-content: space-between;
@@ -455,9 +476,6 @@ section.experience .container .experience-container .slide .slide-header {
 section.experience .container .experience-container .slide .slide-header a {
   text-align: left;
   color: #fff;
-}
-section.experience .container .experience-container .slide .slide-header a::after {
-  background-color: #fff;
 }
 section.experience .container .experience-container .slide .slide-header a i {
   font-size: 1.2em;
@@ -477,6 +495,9 @@ section.experience .container .experience-container .slide p {
   }
   section.experience .container .experience-container .slide:hover {
     background-color: #000;
+  }
+  section.experience .container .experience-container .slide:hover a::after {
+    width: 0%;
   }
   section.experience .container .experience-container .slide .slide-header {
     flex-direction: column;
@@ -770,6 +791,9 @@ section.testimonial .container .testimonial-container .client-box:hover .bg {
   }
   .client-box:hover {
     color: #000 !important;
+  }
+  .client-box:hover a::after {
+    width: 0%;
   }
   .client-box:hover .bg {
     transform: none !important;

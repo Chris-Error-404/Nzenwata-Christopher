@@ -139,6 +139,10 @@ section.testimonial{
   
       &:hover {
         color: col.$black !important;
+
+        a::after{
+          width: 0%;
+        }
   
         .bg {
           transform: none !important;
