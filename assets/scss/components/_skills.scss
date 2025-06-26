@@ -74,7 +74,7 @@ section.skills{
               margin-top: -1em;
 
               i{
-                animation: beat 2s infinite;
+                animation: beat 1.5s infinite;
               }
           
               .bg {
@@ -83,7 +83,7 @@ section.skills{
             }
           }
           
-          // ✅ Disable background animation on mobile
+          // Disable background animation on mobile
           @media (max-width: 1024px) {
             .skill-box .bg {
               display: none;
@@ -91,6 +91,13 @@ section.skills{
           
             .skill-box:hover {
               color: col.$white; // Optional: retain white text on hover
+                            //float up skillbox
+              margin-bottom: 0em;
+              margin-top: 0em;
+
+              i{
+                animation: none;
+              }
             }
           }
             

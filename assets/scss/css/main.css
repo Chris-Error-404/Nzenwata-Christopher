@@ -373,7 +373,7 @@ section.skills .container .skill-box:hover {
   margin-top: -1em;
 }
 section.skills .container .skill-box:hover i {
-  animation: beat 2s infinite;
+  animation: beat 1.5s infinite;
 }
 section.skills .container .skill-box:hover .bg {
   transform: scaleY(1);
@@ -384,6 +384,11 @@ section.skills .container .skill-box:hover .bg {
   }
   section.skills .container .skill-box:hover {
     color: #fff;
+    margin-bottom: 0em;
+    margin-top: 0em;
+  }
+  section.skills .container .skill-box:hover i {
+    animation: none;
   }
 }
 
