@@ -786,6 +786,10 @@ section.testimonial .container .testimonial-container .client-box:hover .bg {
     grid-template-columns: repeat(1, 1fr);
     gap: 1em;
   }
+  section.testimonial .container .testimonial-container .client-box:hover a::after {
+    width: 0%;
+    left: 0;
+  }
 }
 @media (hover: none) and (pointer: coarse) {
   .client-box .bg {
@@ -796,9 +800,6 @@ section.testimonial .container .testimonial-container .client-box:hover .bg {
   }
   .client-box:hover {
     color: #000 !important;
-  }
-  .client-box:hover a::after {
-    width: 0%;
   }
   .client-box:hover .bg {
     transform: none !important;

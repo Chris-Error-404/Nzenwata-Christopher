@@ -122,6 +122,16 @@ section.testimonial{
                 grid-template-columns: repeat(1, 1fr);
                 gap: 1em;
 
+                .client-box{
+
+                  &:hover{
+                    a::after {
+                      width: 0%;
+                      left: 0;
+                    }
+                  }
+                }
+
             }
         }
     }
@@ -139,10 +149,6 @@ section.testimonial{
   
       &:hover {
         color: col.$black !important;
-
-        a::after{
-          width: 0%;
-        }
   
         .bg {
           transform: none !important;
