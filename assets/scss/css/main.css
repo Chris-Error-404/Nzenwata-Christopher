@@ -938,13 +938,13 @@ footer .container a {
 footer .container a::after {
   background-color: #fff;
 }
-footer .container a.logo-container {
+footer .container span.logo-container {
   display: flex;
   align-items: center;
-  gap: 0.3em;
+  gap: 0.7em;
 }
-footer .container a.logo-container img {
-  max-width: 20px;
+footer .container span.logo-container img {
+  max-width: 15px;
 }
 
 @media (max-width: 1024px) {
