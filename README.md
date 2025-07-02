@@ -36,7 +36,7 @@ This is a fresh rebuild of my personal portfolio site. The goal is to create a c
 
 The live site is deployed via [Vercel](https://vercel.com) and automatically updated with every new push to the `main` branch.
 
-🔗 **Live Demo**: [https://your-vercel-portfolio-url.vercel.app](https://your-vercel-portfolio-url.vercel.app)
+🔗 **Live Demo**: [Nzenwata-Christopher](https://nzenwata-christopher.vercel.app/)
 
 ---
 
