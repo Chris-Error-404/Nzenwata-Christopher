@@ -646,11 +646,26 @@
             <h1 class="main-heading">Contact <span>Me</span></h1>
             <div class="contact-container">
 
-                <form action="#">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="url" placeholder="Your website (Optional)">
-                    <textarea name="#" id="#" placeholder="How can i help?*"></textarea>
+                <form action="https://formsubmit.co/nzenwatachristopher186@gmail.com" method="POST">
+
+                    <!--Your Name-->
+                    <input type="text" placeholder="Your Name" required id="name" name="Your Name">
+
+                    <!--Your Email-->
+                    <input type="email" placeholder="Your Email" required id="email" name="Email">
+
+                    <!--Your Website-->
+                    <input type="url" placeholder="Your website (Optional)" id="website" name="website">
+
+                    <!--message-->
+                    <textarea id="message" placeholder="How can I help?*" name="Message" rows="5" required></textarea>
+
+                    <!--Hidden Config-->
+                    <!-- hidden config lines so you don’t get spammed with CAPTCHA-->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New message from portfolio!">
+
+                    <!--button-->
                     <div class="button-container">
                         <button type="submit" class="button-style float-hover">
                           <span class="bg"></span>
