@@ -25,3 +25,10 @@ document.querySelectorAll('.float-hover').forEach((el) => {
   });
   
 
+  //Aos remove delay for mobile script
+/*   if (window.innerWidth < 768) {
+    document.querySelectorAll('.aos-delay').forEach(el => {
+      el.removeAttribute('data-aos-delay');
+    });
+  }
+ */

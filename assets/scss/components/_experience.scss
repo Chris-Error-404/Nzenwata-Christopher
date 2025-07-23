@@ -5,6 +5,7 @@ section.experience{
     margin-top: 3em;
     background-color: col.$black;
     color: col.$white;
+    overflow: hidden;
 
     .container{
         padding: 3em 1em;
@@ -19,6 +20,7 @@ section.experience{
             display: flex;
             flex-direction: column;
             gap: 2em;
+            overflow: hidden;
 
             .slide{
                 display: flex;

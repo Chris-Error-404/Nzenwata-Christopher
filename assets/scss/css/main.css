@@ -446,6 +446,7 @@ section.experience {
   margin-top: 3em;
   background-color: #000;
   color: #fff;
+  overflow: hidden;
 }
 section.experience .container {
   padding: 3em 1em;
@@ -458,6 +459,7 @@ section.experience .container .experience-container {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  overflow: hidden;
 }
 section.experience .container .experience-container .slide {
   display: flex;
@@ -518,10 +520,12 @@ section.experience .container .experience-container .slide p {
 }
 section.about {
   padding: 3em 1em;
+  overflow: hidden;
 }
 section.about .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
 }
 section.about .container img {
   width: 80%;
