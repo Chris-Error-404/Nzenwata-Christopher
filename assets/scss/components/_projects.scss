@@ -3,9 +3,11 @@
 section.projects{
     background-color: col.$black;
     color: col.$white;
+    overflow: hidden;
 
     .container{
         padding: 3em 1em;
+        overflow: hidden;
 
         h1{
             text-align: center;

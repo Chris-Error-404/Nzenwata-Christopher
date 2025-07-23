@@ -28,7 +28,7 @@ section.skills{
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            transition: all 0.4s ease;
+            //transition: all 0.2s ease;
             isolation: isolate;
             backface-visibility: hidden;
             will-change: transform;
@@ -42,7 +42,7 @@ section.skills{
               background: col.$black;
               transform: scaleY(0); // Initially collapsed
               transform-origin: bottom center; // Animate upward
-              transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); // Smooth in/out
+              transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); // Smooth in/out
               z-index: 1;
               backface-visibility: hidden;
               will-change: transform;
@@ -69,13 +69,15 @@ section.skills{
             &:hover {
               color: col.$white;
 
-              //float up skillbox
-              margin-bottom: 1em;
-              margin-top: -1em;
 
               i{
                 animation: beat 1.5s infinite;
+                color: col.$white;
               }
+
+               .sub-heading {
+                color: col.$white;
+               }
           
               .bg {
                 transform: scaleY(1); // Animate bar fill on hover
@@ -90,10 +92,7 @@ section.skills{
             }
           
             .skill-box:hover {
-              color: col.$white; // Optional: retain white text on hover
-                            //float up skillbox
-              margin-bottom: 0em;
-              margin-top: 0em;
+              color: col.$white; 
 
               i{
                 animation: none;
