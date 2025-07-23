@@ -816,6 +816,7 @@ section.testimonial .container .testimonial-container .client-box:hover .bg {
 }
 section.contact .container {
   padding: 3em 1em;
+  overflow: hidden;
 }
 section.contact .container h1 {
   text-align: center;
@@ -826,6 +827,7 @@ section.contact .container .contact-container {
   justify-content: space-between;
   align-items: center;
   gap: 2em;
+  overflow: hidden;
 }
 section.contact .container .contact-container form {
   display: flex;
