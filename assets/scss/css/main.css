@@ -389,7 +389,11 @@ section.skills .container .skill-box:hover .bg {
   section.skills .container .skill-box:hover {
     color: #fff;
   }
+  section.skills .container .skill-box:hover .sub-heading {
+    color: #000;
+  }
   section.skills .container .skill-box:hover i {
+    color: #000;
     animation: none;
   }
 }

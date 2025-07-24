@@ -94,7 +94,12 @@ section.skills{
             .skill-box:hover {
               color: col.$white; 
 
+              .sub-heading {
+                color: col.$black;
+               }
+
               i{
+                color: col.$black;
                 animation: none;
               }
             }
