@@ -42,7 +42,12 @@ section.projects{
 
                     img.mobile{
                         display: none;
-                }
+                    }
+
+                    a.link{
+                        color: col.$white;
+                        text-decoration: underline;
+                    }
 
                 .preview{  //for the alternate images
                     display: flex;

@@ -603,6 +603,10 @@ section.projects .container .project-container .slide img {
 section.projects .container .project-container .slide img.mobile {
   display: none;
 }
+section.projects .container .project-container .slide a.link {
+  color: #fff;
+  text-decoration: underline;
+}
 section.projects .container .project-container .slide .preview {
   display: flex;
   justify-content: right;
