@@ -43,6 +43,7 @@ html body input, html body textarea {
   border-radius: 0px !important;
   border: 1px solid;
   outline: 0px;
+  font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
 }
 html body input::placeholder, html body textarea::placeholder {
   font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
@@ -850,9 +851,11 @@ section.contact .container .contact-container form textarea {
   min-height: 100px;
   max-height: 100px;
   font-size: 1em;
+  font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
 }
 section.contact .container .contact-container form textarea::placeholder {
   font-size: 1em;
+  font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
 }
 section.contact .container .contact-container form .button-container {
   display: flex;
