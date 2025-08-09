@@ -40,7 +40,7 @@ section.projects{
                         border: 1px solid col.$light-gray;
                     }
 
-                    img.mobile{
+                    .mobile{
                         display: none;
                     }
 
@@ -53,13 +53,17 @@ section.projects{
                     display: flex;
                     justify-content: right;
                     align-items: baseline;
-                    
+
+                    a{
+                        height: 100%;
+                                            
                     img{
                         width: 100%;
                         /* height: auto; */
                         height: 100%; //to fill the slide
                         border: 1px solid col.$light-gray;
                     }
+                    } 
                 }
 
                 .slide-text{
@@ -141,7 +145,7 @@ section.projects{
                         height: auto;//to not mess up images siz on mobile
                     }
 
-                    img.mobile{
+                    .mobile{
                         display: block;
                         height: auto; //to not mess up images siz on mobile
                     }
