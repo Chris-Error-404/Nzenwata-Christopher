@@ -40,7 +40,7 @@ section.projects{
                         border: 1px solid col.$light-gray;
                     }
 
-                    .mobile{
+                    a.mobile{
                         display: none;
                     }
 
@@ -145,7 +145,7 @@ section.projects{
                         height: auto;//to not mess up images siz on mobile
                     }
 
-                    .mobile{
+                    a.mobile{
                         display: block;
                         height: 100%; //to not mess up images siz on mobile
                     }
