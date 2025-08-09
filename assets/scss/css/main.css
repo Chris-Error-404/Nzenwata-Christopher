@@ -715,7 +715,6 @@ section.testimonial .container .testimonial-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
-  overflow: hidden;
 }
 section.testimonial .container .testimonial-container .client-box {
   position: relative;
