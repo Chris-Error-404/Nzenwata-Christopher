@@ -238,7 +238,7 @@ nav.navbar .container a.button-style.float-hover:hover .bg {
 
 @media (max-width: 1024px) {
   nav.navbar .container {
-    padding: 1em;
+    padding: 0.75em 1em;
   }
   nav.navbar .container a.logo-container img {
     width: 40px;
@@ -249,6 +249,9 @@ nav.navbar .container a.button-style.float-hover:hover .bg {
   }
   nav.navbar .container span {
     max-width: 50%;
+  }
+  nav.navbar .container a.button-style {
+    font-size: 0.9em;
   }
 }
 section.hero {
