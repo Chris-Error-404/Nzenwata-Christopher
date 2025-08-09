@@ -125,7 +125,7 @@ nav.navbar {
     nav.navbar{
 
         .container{
-            padding: 1em;
+            padding: 0.75em 1em;
 
             a.logo-container{
             img{
@@ -140,6 +140,10 @@ nav.navbar {
 
             span{
                 max-width: 50%;
+            }
+
+            a.button-style{
+              font-size: 0.9em;
             }
         }
     }
