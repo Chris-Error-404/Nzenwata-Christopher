@@ -687,7 +687,7 @@ section.projects .container .project-container .slide .slide-text .info .stack i
   }
   section.projects .container .project-container .slide .mobile {
     display: block;
-    height: auto;
+    height: 100%;
   }
   section.projects .container .project-container .slide .preview {
     display: none;
