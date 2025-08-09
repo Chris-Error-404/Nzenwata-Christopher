@@ -240,6 +240,10 @@ nav.navbar .container a.button-style.float-hover:hover .bg {
   nav.navbar .container {
     padding: 1em;
   }
+  nav.navbar .container a.logo-container img {
+    width: 40px;
+    height: auto;
+  }
   nav.navbar .container ul {
     display: none;
   }

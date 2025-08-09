@@ -127,6 +127,13 @@ nav.navbar {
         .container{
             padding: 1em;
 
+            a.logo-container{
+            img{
+                width: 40px;
+                height: auto;
+            }
+          }
+
             ul{
                 display: none;
             }
