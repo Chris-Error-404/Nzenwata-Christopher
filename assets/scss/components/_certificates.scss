@@ -1,0 +1,133 @@
+@use '../abstracts/colors' as col;
+
+section.certificates{
+    background-color: col.$white;
+    color: col.$black;
+    overflow: hidden;
+
+    .container{
+        padding: 3em 1em;
+        overflow: hidden;
+
+        img{
+            max-width: 100%;
+            /* height: auto; */
+            height: 330px; //to fill the slide
+            border: 1px solid col.$light-gray;
+
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .certificates-container{
+            margin-top: 4em;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+
+            .slide{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0em;
+                align-items: center;
+                cursor: pointer;
+                padding: 2em;
+                transition: all 0.2s ease-out;
+                border: 1px solid col.$light-gray;
+
+                    &:hover{
+                        background-color: col.$black;
+                        color: col.$white;
+
+                        p{
+                            color: col.$white !important;
+                        }
+                    }
+
+
+
+                    .mobile{
+                        display: none;
+
+                    }
+
+                    a.link{
+                        color: col.$white;
+                        text-decoration: underline;
+                    }
+
+                .preview{  //for the alternate images
+                    display: flex;
+                    justify-content: right;
+                    align-items: baseline;
+                }
+
+                .slide-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    gap:1em;
+
+                    h1{
+                        text-align: left;
+                    }
+                    p{
+                        color: col.$black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:1024px){
+    section.certificates{
+    
+        .container{
+            padding: 3em 1em;
+        
+            .certificates-container{
+                margin-top: 3em;
+                gap: 1em;
+    
+                .slide{
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 1em;
+                    padding: 1em;
+
+                    &:hover{
+                        background-color: col.$white;
+                        color: col.$black;
+
+                        p{
+                            color: col.$black !important;
+                        }
+                    }
+
+                    img{
+                        height: auto;//to not mess up images siz on mobile
+                    }
+
+                    .mobile{
+                        display: block;
+                    }
+    
+                    .preview{
+                        display: none;
+                    }
+    
+                    .slide-text{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1em;   
+                    }
+                }
+            }
+        }
+    }
+    
+}
