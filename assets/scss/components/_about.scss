@@ -2,17 +2,20 @@
 
 section.about{
     padding: 3em 1em;
-    overflow: hidden;
 
     .container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         overflow: hidden;
+        align-items: center;
         //gap: 2em;
 
         img{
-            width: 80%;
+            width: 70%;
             height: auto;
+            border-radius: 20px 0px 20px 0px;
+            border: 5px solid col.$white;
+            outline: 2px solid col.$black; 
         }
 
         .about-text{
@@ -51,7 +54,7 @@ section.about{
             }
 
             img{
-                width: 100%;
+                width: 90%;
             }
             
         }
