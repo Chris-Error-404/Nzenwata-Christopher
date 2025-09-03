@@ -21,7 +21,7 @@ html {
 }
 html body {
   background-color: #fff;
-  color: #000;
+  color: #141414;
   font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
   font-size: 1em;
   line-height: 1.5;
@@ -35,7 +35,7 @@ html body ul, html body li {
 }
 html body a {
   text-decoration: none;
-  color: #000;
+  color: #141414;
 }
 html body input, html body textarea {
   font-size: 1em;
@@ -91,15 +91,15 @@ html body input::placeholder, html body textarea::placeholder {
   cursor: pointer;
   padding: 0.5em 1em;
   font-size: 1em;
-  border: 1px solid #000;
+  border: 1px solid #141414;
   border-radius: 0px;
   transition: all 0.2s;
-  background-color: #000;
+  background-color: #141414;
   color: #fff;
 }
 .button-style:hover {
   background-color: #fff;
-  color: #000;
+  color: #141414;
 }
 
 .icon-style {
@@ -111,7 +111,7 @@ html body input::placeholder, html body textarea::placeholder {
   justify-content: center;
   cursor: pointer;
   font-size: 1.2rem;
-  border: 1px solid #000;
+  border: 1px solid #141414;
   border-radius: 0px;
   overflow: hidden;
   isolation: isolate;
@@ -120,7 +120,7 @@ html body input::placeholder, html body textarea::placeholder {
 .icon-style .bg {
   position: absolute;
   inset: 0;
-  background: #000;
+  background: #141414;
   transform: scaleY(0);
   transform-origin: bottom center;
   transition: transform 0.4s ease;
@@ -174,10 +174,10 @@ nav.navbar .container ul {
   gap: 1.8em;
 }
 nav.navbar .container ul a {
-  color: #000;
+  color: #141414;
 }
 nav.navbar .container ul a::after {
-  background-color: #000;
+  background-color: #141414;
 }
 nav.navbar .container a.button-style.float-hover {
   position: relative;
@@ -188,9 +188,9 @@ nav.navbar .container a.button-style.float-hover {
   cursor: pointer;
   padding: 0.5em 1em;
   font-size: 1em;
-  border: 1px solid #000;
+  border: 1px solid #141414;
   border-radius: 0px;
-  background-color: #000;
+  background-color: #141414;
   color: #fff;
   overflow: hidden;
   isolation: isolate;
@@ -218,7 +218,7 @@ nav.navbar .container a.button-style.float-hover .text {
   white-space: nowrap;
 }
 nav.navbar .container a.button-style.float-hover:hover {
-  color: #000;
+  color: #141414;
 }
 nav.navbar .container a.button-style.float-hover:hover .bg {
   transform: scaleY(1);
@@ -232,7 +232,7 @@ nav.navbar .container a.button-style.float-hover:hover .bg {
   }
   nav.navbar .container a.button-style.float-hover:hover {
     background-color: #fff;
-    color: #000;
+    color: #141414;
   }
 }
 
@@ -332,7 +332,7 @@ section.skills .container {
 }
 section.skills .container .skill-box {
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid #141414;
   min-height: 180px;
   display: flex;
   flex-direction: column;
@@ -354,7 +354,7 @@ section.skills .container .skill-box .bg {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: #000;
+  background: #141414;
   transform: scaleY(0);
   transform-origin: bottom center;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -398,10 +398,10 @@ section.skills .container .skill-box:hover .bg {
     color: #fff;
   }
   section.skills .container .skill-box:hover .sub-heading {
-    color: #000;
+    color: #141414;
   }
   section.skills .container .skill-box:hover i {
-    color: #000;
+    color: #141414;
     animation: none;
   }
 }
@@ -419,7 +419,7 @@ section.skills .container .skill-box:hover .bg {
   }
   section.skills .container .skill-box:hover {
     background-color: #fff;
-    color: #000;
+    color: #141414;
   }
   section.skills .container .sub-heading {
     font-size: 1.05em;
@@ -433,10 +433,10 @@ section.skills .container .skill-box:hover .bg {
     display: none !important;
   }
   .skill-box .text {
-    color: #000 !important;
+    color: #141414 !important;
   }
   .skill-box:hover {
-    color: #000 !important;
+    color: #141414 !important;
   }
   .skill-box:hover .bg {
     transform: none !important;
@@ -455,7 +455,7 @@ section.skills .container .skill-box:hover .bg {
 }
 section.experience {
   margin-top: 3em;
-  background-color: #000;
+  background-color: #141414;
   color: #fff;
   overflow: hidden;
 }
@@ -515,7 +515,7 @@ section.experience .container .experience-container .slide p {
     padding: 1em;
   }
   section.experience .container .experience-container .slide:hover {
-    background-color: #000;
+    background-color: #141414;
   }
   section.experience .container .experience-container .slide:hover a::after {
     width: 0%;
@@ -572,7 +572,7 @@ section.about .container .about-text P a {
   }
 }
 section.projects {
-  background-color: #000;
+  background-color: #141414;
   color: #fff;
   overflow: hidden;
 }
@@ -687,7 +687,7 @@ section.projects .container .project-container .slide .slide-text .info .stack i
     padding: 1em;
   }
   section.projects .container .project-container .slide:hover {
-    background-color: #000;
+    background-color: #141414;
   }
   section.projects .container .project-container .slide img {
     height: auto;
@@ -713,7 +713,7 @@ section.projects .container .project-container .slide .slide-text .info .stack i
 }
 section.certificates {
   background-color: #fff;
-  color: #000;
+  color: #141414;
   overflow: hidden;
 }
 section.certificates .container-sm {
@@ -746,7 +746,7 @@ section.certificates .container-sm .certificates-container .slide {
   border: 1px solid #404040;
 }
 section.certificates .container-sm .certificates-container .slide:hover {
-  background-color: #000;
+  background-color: #141414;
   color: #fff;
 }
 section.certificates .container-sm .certificates-container .slide:hover p {
@@ -774,7 +774,7 @@ section.certificates .container-sm .certificates-container .slide .slide-text h1
   text-align: left;
 }
 section.certificates .container-sm .certificates-container .slide .slide-text p {
-  color: #000;
+  color: #141414;
 }
 
 @media (max-width: 1024px) {
@@ -792,10 +792,10 @@ section.certificates .container-sm .certificates-container .slide .slide-text p 
   }
   section.certificates .container-sm .certificates-container .slide:hover {
     background-color: #fff;
-    color: #000;
+    color: #141414;
   }
   section.certificates .container-sm .certificates-container .slide:hover p {
-    color: #000 !important;
+    color: #141414 !important;
   }
   section.certificates .container-sm .certificates-container .slide img {
     height: auto;
@@ -831,7 +831,7 @@ section.testimonial .container .testimonial-container .client-box {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  border: 1px solid #000;
+  border: 1px solid #141414;
   padding: 2em;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -846,7 +846,7 @@ section.testimonial .container .testimonial-container .client-box .bg {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background-color: #000;
+  background-color: #141414;
   transform: scaleY(0);
   transform-origin: bottom center;
   transition: transform 0.5s ease;
@@ -867,7 +867,7 @@ section.testimonial .container .testimonial-container .client-box img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 1px solid #141414;
 }
 section.testimonial .container .testimonial-container .client-box a {
   text-align: center;
@@ -924,10 +924,10 @@ section.testimonial .container .testimonial-container .client-box:hover .bg {
     display: none !important;
   }
   .client-box .content {
-    color: #000 !important;
+    color: #141414 !important;
   }
   .client-box:hover {
-    color: #000 !important;
+    color: #141414 !important;
   }
   .client-box:hover .bg {
     transform: none !important;
@@ -977,8 +977,8 @@ section.contact .container .contact-container form .button-container .button-sty
   position: relative;
   padding: 0.8em 1em;
   font-weight: 500;
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #141414;
+  background-color: #141414;
   color: #fff;
   cursor: pointer;
   overflow: hidden;
@@ -1004,7 +1004,7 @@ section.contact .container .contact-container form .button-container .button-sty
   text-align: center;
 }
 section.contact .container .contact-container form .button-container .button-style:hover {
-  color: #000;
+  color: #141414;
 }
 section.contact .container .contact-container form .button-container .button-style:hover .bg {
   transform: scaleY(1);
@@ -1028,10 +1028,10 @@ section.contact .container .contact-container .contact-text h1 span {
   font-weight: 600;
 }
 section.contact .container .contact-container .contact-text a {
-  color: #000;
+  color: #141414;
 }
 section.contact .container .contact-container .contact-text a::after {
-  background-color: #000;
+  background-color: #141414;
 }
 
 @media (max-width: 1024px) {
@@ -1051,7 +1051,7 @@ section.contact .container .contact-container .contact-text a::after {
   }
 }
 footer {
-  background-color: #000;
+  background-color: #141414;
   color: #fff;
 }
 footer .container {
