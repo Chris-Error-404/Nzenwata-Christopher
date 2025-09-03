@@ -535,7 +535,6 @@ section.about {
 section.about .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  overflow: hidden;
   align-items: center;
 }
 section.about .container img {
