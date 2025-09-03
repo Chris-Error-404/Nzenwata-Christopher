@@ -5,7 +5,7 @@ section.certificates{
     color: col.$black;
     overflow: hidden;
 
-    .container{
+    .container-sm{
         padding: 3em 1em;
         overflow: hidden;
 
@@ -87,7 +87,7 @@ section.certificates{
 @media(max-width:1024px){
     section.certificates{
     
-        .container{
+        .container-sm{
             padding: 3em 1em;
         
             .certificates-container{
